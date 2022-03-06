@@ -1,0 +1,47 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+header{
+    nav{
+        background-color: #24263B;
+        ul{
+            padding:20px 0 ;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            a{
+                color: white;
+                &:hover{
+                    color:#FF4A57;
+                    text-decoration: none;
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            max-width: 64px;
+        }
+    }
+}
+main{
+    section{
+        &.home{
+
+            img{
+                max-height: 350px;
+            }
+
+        }
+        &.services{
+            
+        }
+
+        &.about{
+            
+        }
+
+    }
+
+}
+footer{
+
+}

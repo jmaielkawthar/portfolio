@@ -1,0 +1,38 @@
+/* Bootstrap variables */
+$grid-columns: 36;
+$grid-gutter-width: 40px;
+$grid-gutter-width-mobile: 30px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+     
+        sm: 704px,
+        md: 960px,
+        lg: 1140px,
+        xl: 1320px
+);
+
+$spacer: 1px;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 0 through 100 {
+  $spacers: map-merge(
+                  (
+                          $i: ($spacer * $i),
+                  ),
+                  $spacers
+  );
+}
+.container-min{
+        max-width: 1320px;
+}
+.container-max{
+        max-width: 1440px;
+        margin: 0 auto;
+}

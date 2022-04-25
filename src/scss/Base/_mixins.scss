@@ -1,0 +1,26 @@
+@mixin item-loop($className, $styleName, $min: 0 , $max:100 ) {
+	$i: $min;
+	$unit: 'px';
+	@while $i <= $max {
+		#{$className + $i} {
+			#{$styleName}: #{$i + $unit};
+		}
+		$i: $i + 1;
+	}
+}
+
+@mixin list-loop($className, $styleName, $media: '' , $min: 0 , $max:100 ) {
+	@if $media=='' {
+		@include item-loop($className, $styleName, $min, $max)
+	} @else {
+		@include media-breakpoint-up(#{$media}) {
+			@include item-loop($className, $styleName, $min, $max)
+		}
+	}
+}
+
+@mixin spread-map($map: ()) {
+    @each $key, $value in $map {
+        #{$key}: $value;
+    }
+}

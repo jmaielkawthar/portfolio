@@ -1,0 +1,50 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/alert";
+
+@include media-breakpoint-between(tns, md){
+  .container, [class*="container-"]{
+    padding-right: calc($grid-gutter-width-mobile / 2);
+    padding-left: calc($grid-gutter-width-mobile / 2);
+  }
+  .container.no-padding, [class*="container-"].no-padding {
+    padding-right: 0;
+    padding-left: 0;
+    @include media-breakpoint-up(xs){
+      padding-right: calc($grid-gutter-width-mobile / 2);
+      padding-left: calc($grid-gutter-width-mobile / 2);
+    }
+  }
+  .container.no-padding-all, [class*="container-"].no-padding-all {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .row{
+    margin-right: -1 * calc($grid-gutter-width-mobile / 2);
+    margin-left: -1*  calc($grid-gutter-width-mobile / 2);
+  }
+  .row > .col,
+  .row > [class*="col-"] {
+    padding-right: calc($grid-gutter-width-mobile / 2);
+    padding-left: calc($grid-gutter-width-mobile / 2);
+  }
+
+
+  .row.no-gutters > .col,
+  .row.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+}

@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    word-break: break-word;
+    font-family: $font-family-base;
+    letter-spacing: $letter-spacing-normal;
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    //60/76 &  32/48
+    font-size: $font-size-large-mobile-3;
+    line-height: $line-height-large-mobile-3;
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-large-3 ;
+        line-height: $line-height-large-3;
+    }
+}
+
+h2 {
+    //40/56 &  26/56
+    font-size:$font-size-large-mobile-2;
+    line-height: $line-height-large-mobile-4;
+    @include media-breakpoint-up(lg) {
+        font-size:$font-size-large-0 ;
+        line-height:$line-height-medium-0;
+    }
+}
+
+h3 {
+    //  30/56  26/38.69
+    font-size: $font-size-large-mobile-2;
+    line-height: $line-height-large-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-0;
+        line-height: $line-height-medium-0;
+    }
+
+}
+
+h4 {
+    //  26/38.69 18/26.78
+    font-size:$font-size-large-mobile-0;
+    line-height:$line-height-large-mobile-0;
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-medium-1;
+        line-height: $line-height-medium-4;
+    }
+}
+
+.ce-headline {
+    &-center {
+        text-align: center;
+    }
+}

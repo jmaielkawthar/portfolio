@@ -1,0 +1,123 @@
+/* ------------------------------------
+  Font-weight
+ ------------------------------------ */
+$font-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-very-extra-bold: 900;
+
+/* ------------------------------------
+   Font-styles
+  ------------------------------------ */
+$font-style-normal: normal;
+$font-style-italic: italic;
+/* ------------------------------------
+   letter-spacing
+  ------------------------------------ */
+
+$letter-spacing-normal: 0;
+$letter-spacing-small: 0.1px;
+$letter-spacing-medium: 0.5px;
+
+/* ------------------------------------
+   Desktop Font sizes
+  ------------------------------------ */
+
+$font-size-small-0 :14px;
+
+$font-size-default-1 :16px;
+$font-size-default-0 :18px;
+
+$font-size-medium-4 :20px;
+$font-size-medium-3 :21px;
+$font-size-medium-2 :22px;
+$font-size-medium-1 :26px;
+$font-size-medium-0 :30px;
+
+$font-size-large-0 :40px;
+$font-size-large-1 :41px;
+$font-size-large-2 :42px;
+$font-size-large-3 :60px;
+$font-size-large-4 :100px;
+
+
+/* ------------------------------------
+  Desktop Line Heights
+  ------------------------------------ */
+
+$line-height-small-0 :20.83px;
+
+$line-height-default-1: 24px;
+$line-height-default-0: 26.78px;
+
+$line-height-medium-8: 28.69px;
+$line-height-medium-7: 30px;
+$line-height-medium-6 :31.25px;
+$line-height-medium-5 :32.74px;
+$line-height-medium-4 :38.69px;
+
+$line-height-medium-3: 40px;
+$line-height-medium-2: 44.64px;
+$line-height-medium-1 :52px;
+$line-height-medium-0 :56px;
+
+$line-height-large-0 : 59.52px;
+$line-height-large-1 : 61.01px;
+$line-height-large-2 : 70px;
+$line-height-large-3 : 76px;
+$line-height-large-4 : 93px;
+
+/* ------------------------------------
+ Mobile Font sizes
+ ------------------------------------ */
+$font-size-small-mobile-1: 9.19px;
+$font-size-small-mobile-0: 10px;
+$font-size-default-mobile-2: 11px;
+$font-size-default-mobile-1: 13px;
+$font-size-default-mobile-0: 14px;
+
+$font-size-medium-mobile-1: 15px;
+$font-size-medium-mobile-0: 17.95px;
+
+$font-size-large-mobile-0: 18px;
+$font-size-large-mobile-1: 18.39px;
+$font-size-large-mobile-2: 26px;
+$font-size-large-mobile-3: 32px;
+$font-size-large-mobile-4: 43.78px;
+/* ------------------------------------
+ Mobile Line Heights
+ ------------------------------------ */
+
+
+
+$line-height-small-mobile-2: 12.56px;
+$line-height-small-mobile-1: 13.68px;
+$line-height-small-mobile-0: 14px;
+
+$line-height-default-mobile-1: 18px;
+$line-height-default-mobile-0: 20.83px;
+
+$line-height-medium-mobile-1:  22.76px;
+$line-height-medium-mobile-0: 26.71px;
+
+$line-height-large-mobile-01: 26.78px;
+$line-height-large-mobile-0: 38.69px;
+$line-height-large-mobile-1: 40px;
+$line-height-large-mobile-2: 40.71px;
+$line-height-large-mobile-3: 48px;
+$line-height-large-mobile-4: 56px;
+
+/* ------------------------------------
+  Base Variables
+  ------------------------------------ */
+
+$font-family-Clan-news: 'Clan_news';
+$font-family-base: $font-family-Clan-news;
+
+$font-family-Clan-medium: 'Clan_medium';
+$font-family-Clan-bold: 'Clan_bold';
+

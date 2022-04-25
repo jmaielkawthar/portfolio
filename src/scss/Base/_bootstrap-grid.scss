@@ -1,0 +1,13 @@
+/* ------------------------------------
+The complete Bootstrap grid system
+[!] Don't change declaration order; Only change pixel values or grid columns if desired
+=======================================
+Did you know?
+
+You can use mixins provided by Bootstrap to create custom columns (and other grid elements);
+Formula is: $grid-columns ÷ <number> = <variable>
+
+Example for 5 columns (12 ÷ 5 = 2.4) and breakpoint 'sm':
+@include make-sm-column(2.4);
+------------------------------------ */
+

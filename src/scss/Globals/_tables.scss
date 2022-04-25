@@ -1,0 +1,31 @@
+table{
+    &.primary-table{
+        width: 100%;
+        th,td{
+            font-family: $font-family-base;
+            color: $color-black;
+            font-weight: $font-weight-regular;
+            font-size: $font-size-default-mobile-0;
+            line-height:$line-height-default-mobile-0;
+            @include media-breakpoint-up(md) {
+                font-size: $font-size-default-0 ;
+                line-height: $line-height-default-0 ;
+                padding:10px 0;
+            }
+        }
+        tr{
+            border-bottom: 1px solid $color-gray-800;
+        }
+        thead{
+            th{
+                color: $color-black;
+                font-weight: $font-weight-bold;
+            }
+        }
+        tbody{
+            th{
+                font-weight: $font-weight-semi-bold;
+            }
+        }
+    }
+}

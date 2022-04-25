@@ -1,0 +1,49 @@
+/* ------------------------------------
+Very convenient
+=======================================
+But don't forget to hide these when going live!
+------------------------------------ */
+
+// For checking single items
+%aid-line {
+    outline: 0.063rem dashed red;
+    position: relative;
+
+    &:after {
+        background: yellow;
+        bottom: 0;
+        color: red;
+        content: "Dashed line(s): auxiliary line(s) for development only";
+        font-size: 0.875rem;
+        left: 0;
+        padding: 0.313rem 0.625rem;
+        position: absolute;
+    }
+}
+
+// For checking the whole grid
+%grid-aid {
+
+    .container {
+        @extend %aid-line;
+
+        .row {
+            outline: 0.063rem solid lime;
+        }
+
+        .row [class^="col-"],
+        .row [class*=" col-"] {
+            outline: 0.063rem dotted cyan;
+        }
+    }
+}
+
+body {
+    background: #f7f7f7;
+    // @extend %grid-aid;
+}
+
+.extbase-debugger-floating{
+    z-index: 9999999;
+    overflow: visible;
+}

@@ -1,4 +1,69 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* ------------------------------------
+1. Vendors & NPM components
+------------------------------------ */
+
+//@import "../node_modules/slick-carousel/slick/slick.scss";
+//@import "../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
+//@import "Vendors/jquery.fancybox";
+
+/* ------------------------------------
+2. Basics
+------------------------------------ */
+// @import "Base/bootstrap-grid";
+@import "Base/variables";
+@import "Base/bootstrap";
+@import "Base/colors";
+@import "Base/development-utilities";
+@import "Base/mixins";
+@import "Base/font-faces";
+@import "Base/font-variables-and-settings";
+@import "Base/z-indeces";
+
+
+/* ------------------------------------
+3. Functions
+------------------------------------ */
+@import "Functions/shade-and-tint";
+@import "Functions/slick-theme";
+
+/* ------------------------------------
+4. Globals
+------------------------------------ */
+@import "Globals/headlines";
+@import "Globals/images";
+@import "Globals/texts";
+@import "Globals/buttons";
+@import "Globals/forms";
+@import "Globals/lists";
+@import "Globals/icons";
+@import "Globals/tables";
+@import "Globals/filter";
+
+/* ------------------------------------
+5. Partials
+------------------------------------ */
+@import "Partials/body";
+@import "Partials/header";
+@import "Partials/footer";
+@import "Partials/style-guide";
+@import "Partials/pagination";
+
+/* ------------------------------------
+6. Conditionals
+------------------------------------ */
+@import "Conditionals/only-ie";
+@import "Conditionals/only-ipad";
+@import "Conditionals/only-print";
+
+
+/* ------------------------------------
+ 7. Content Elements
+ ------------------------------------ */
+
+
+
 header{
     nav{
         background-color: #24263B;
@@ -40,8 +105,5 @@ main{
         }
 
     }
-
-}
-footer{
 
 }

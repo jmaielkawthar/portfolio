@@ -1,0 +1,74 @@
+.style-guide{
+    font-family: $font-family-source;
+    text-transform: capitalize;
+    section{
+        &.header{
+            .logo{
+                margin: auto;
+            }
+        }
+        &.colors{
+            .sg-box-color{
+                height: 50px;
+            }
+            .sg-box-name{
+                font-size: 20px;
+                line-height: 20px;
+
+            }
+            .sg-box-code{
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+        }
+        &.texts{
+            .row-texts{
+                &.desktop{
+                    display: none;
+                    @include media-breakpoint-up(sm) {
+                        display: flex;
+                    }
+                }
+                .col-texts{
+                    border-right: none;
+                    @include media-breakpoint-up(sm) {
+                        border-right: 1px solid black;
+                        border-bottom: 1px solid black;
+                    }
+                    &:last-child{
+                        border-right: none;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        text-align: center;
+                        padding:5px;
+                        @include media-breakpoint-up(sm) {
+                            padding: 20px;
+                        }
+                    }
+                }
+                .display-texts{
+                    width:fit-content;
+                    margin:5px auto;
+                    @include media-breakpoint-up(sm) {
+                        margin: 20px auto;
+                    }
+                }
+                .def-texts{
+                    color: #4da6e7;
+                    border-bottom: 1px solid #4da6e7;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding:5px;
+                    @include media-breakpoint-up(sm) {
+                        border-bottom:none;
+                        padding: 20px;
+                    }
+                
+                }
+            }
+        }
+    }
+}

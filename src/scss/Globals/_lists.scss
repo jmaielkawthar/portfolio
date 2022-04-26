@@ -1,0 +1,20 @@
+/* ------------------------------------
+LISTS
+------------------------------------ */
+ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    li{
+         // 15 /30/400 14/20
+       font-family: $font-family-source;
+       text-transform: capitalize;
+       font-size:  $font-size-default-mobile-0;
+       line-height:  $line-height-default-mobile-0;
+       color: $gray-dark;
+       @include media-breakpoint-up(lg) {
+           font-size:  $font-size-default-0;
+           line-height: $line-height-default-0;
+       }
+    }
+}

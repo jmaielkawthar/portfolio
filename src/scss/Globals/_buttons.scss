@@ -1,0 +1,73 @@
+// style for buttons
+a,
+button {
+   // font-family: $font-family-base;
+    cursor: pointer;
+    &.primary-button {
+        width:fit-content;
+        background-color:$blue-cyan;
+        border: none;
+        border-radius: 50px;
+        color: $color-white;
+        // 15 /30/300 14/20
+        padding: 10px 40px;
+        text-transform: capitalize;
+        font-weight: $bold;
+        font-size:  $font-size-default-mobile-0;
+        line-height:  $line-height-default-mobile-0;
+        @include media-breakpoint-up(md) {
+            font-size:  $font-size-default-0;
+            line-height: $line-height-default-0; 
+        }
+        &:hover {
+            text-decoration: none;
+            background-color: $blue-cyan;
+        }
+
+    }
+    &.secondary-button {
+        width:fit-content;
+        color: $blue-cyan;
+        border:1px solid   $blue-cyan;
+        background-color:  transparent;
+        border-radius: 50px;
+        padding: 15px ;
+        text-align: center;
+        // 15 /30/300 14/20
+        text-transform: capitalize;
+        font-size:  $font-size-default-mobile-0;
+        line-height:  $line-height-default-mobile-0;
+        @include media-breakpoint-up(md) {
+            font-size:  $font-size-default-0;
+            line-height: $line-height-default-0; 
+        }
+        &:hover {
+            text-decoration: none;
+            color:  $blue-cyan;
+            border-color:  $blue-cyan;
+        }
+
+    }
+}
+.a-btn{
+    display: flex;
+    text-align: center;
+}
+// style for links
+a {
+    &.link{
+        // 15 /30/400 14/20
+    text-transform: capitalize;
+    font-size:  $font-size-default-mobile-0;
+    line-height:  $line-height-default-mobile-0;
+    color: $gray;
+    @include media-breakpoint-up(lg) {
+        font-size:  $font-size-default-0;
+        line-height: $line-height-default-0;
+    }
+    &:hover, &.active{
+        color: $blue;
+    }
+   }
+}
+

@@ -1,57 +1,73 @@
+/* ------------------------------------
+HEADLINES
+------------------------------------ */
 h1,
 h2,
 h3,
 h4,
-h5 {
-    word-break: break-word;
-    font-family: $font-family-base;
-    letter-spacing: $letter-spacing-normal;
+h5,
+h6{
+    font-family: $font-family-source;
+    text-transform: capitalize;
     font-weight: $font-weight-bold;
+    color: $gray-dark;
 }
 
 h1 {
-    //60/76 &  32/48
+    //60/60/700 &   32/48
     font-size: $font-size-large-mobile-3;
     line-height: $line-height-large-mobile-3;
-    @include media-breakpoint-up(lg) {
-        font-size: $font-size-large-3 ;
+    @include media-breakpoint-up(md) {
+        font-size:  $font-size-large-3 ;
         line-height: $line-height-large-3;
     }
 }
 
 h2 {
-    //40/56 &  26/56
+    //45/50/700 & 26/45
     font-size:$font-size-large-mobile-2;
-    line-height: $line-height-large-mobile-4;
-    @include media-breakpoint-up(lg) {
-        font-size:$font-size-large-0 ;
-        line-height:$line-height-medium-0;
+    line-height: $line-height-large-mobile-2;
+    @include media-breakpoint-up(md) {
+        font-size:$font-size-large-1 ;
+        line-height:$line-height-large-1;
     }
 }
 
 h3 {
-    //  30/56  26/38.69
-    font-size: $font-size-large-mobile-2;
-    line-height: $line-height-large-mobile-0;
-    @include media-breakpoint-up(md) {
-        font-size: $font-size-medium-0;
-        line-height: $line-height-medium-0;
-    }
+   //  40/45/700 & 18/38
+   font-size:$font-size-large-mobile-0;
+   line-height: $line-height-large-mobile-0;
+   @include media-breakpoint-up(md) {
+       font-size:$font-size-large-0 ;
+       line-height:$line-height-large-0;
+   }
 
 }
 
 h4 {
-    //  26/38.69 18/26.78
-    font-size:$font-size-large-mobile-0;
-    line-height:$line-height-large-mobile-0;
-    @include media-breakpoint-up(lg) {
-        font-size: $font-size-medium-1;
-        line-height: $line-height-medium-4;
+        //  35/42/700 & 17/26
+    font-size:$font-size-medium-mobile-0;
+    line-height:$line-height-medium-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-0;
+        line-height: $line-height-medium-0;
     }
 }
-
-.ce-headline {
-    &-center {
-        text-align: center;
+h5 {
+    //  25/38/700 & 15/22
+    font-size:$font-size-medium-mobile-1;
+    line-height:$line-height-medium-mobile-1;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-2;
+        line-height: $line-height-medium-2;
+    }
+}
+h6 {
+    //  18/32/700 & 14/20
+    font-size:  $font-size-default-mobile-0;
+    line-height:  $line-height-default-mobile-0;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-medium-4;
+        line-height: $line-height-medium-4;
     }
 }

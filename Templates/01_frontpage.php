@@ -10,10 +10,16 @@ include 'Globals/head.php';
 include 'Partials/header.php';
 //------------------------------ START CONTENT ---------------------------------
 ?>
-
+../src/images/logo.svg
 <?php
-ce('element', [
-    'text' => 'This is a test element !'
+ce('header-home', [
+    'class' => '',
+    'image' => '../src/images/about-left-image.png',
+    'headline' => 'Verantwortungsvoll
+                Immobilien entwickeln,
+                nachhaltig investieren',
+    'text' => 'Elevator Message here: EU Green Deal treibt Transformation hin zu Nachhaltigkeit voran mit Zielen für Klimaneutralität, Energiewende, Ressourcenwende und soziale Standards.',
+    'btn' => 'Get started',
 ]);
 ?>
 

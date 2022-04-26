@@ -1,7 +1,7 @@
 /* Bootstrap variables */
-$grid-columns: 36;
-$grid-gutter-width: 40px;
-$grid-gutter-width-mobile: 30px;
+$grid-columns: 12;
+$grid-gutter-width: 18px;
+$grid-gutter-width-mobile: 18px;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -12,10 +12,11 @@ $grid-breakpoints: (
 
 $container-max-widths: (
      
-        sm: 704px,
-        md: 960px,
-        lg: 1140px,
-        xl: 1320px
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
 );
 
 $spacer: 1px;

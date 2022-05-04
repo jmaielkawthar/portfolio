@@ -1,14 +1,25 @@
-
 <header>
     <nav>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 navbar-logo">
                     <div class="logo">
                         <img src="../src/images/logo.svg" alt="logo" title="logo" />
                     </div>
+                    <div class="mobile-icon-menu">
+                        <button class="icon-menu" type="button">
+                            <div class="icon-menu-open">
+                                <span class="hamburger"></span>
+                                <span class="hamburger"></span>
+                                <span class="hamburger"></span>
+                            </div>
+                            <div class="icon-menu-close ">
+                            </div>
+                        </button>
+                    </div>
                 </div>
-                <div class="col-sm-9">
+
+                <div class="col-sm-9 navbar-menu">
                     <ul>
                         <li><a href="#home"> home</a></li>
                         <li><a href="#services"> services</a></li>

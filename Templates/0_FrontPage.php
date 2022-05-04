@@ -10,7 +10,6 @@ include 'Globals/head.php';
 include 'Partials/header.php';
 //------------------------------ START CONTENT ---------------------------------
 ?>
-../src/images/logo.svg
 <?php
 ce('header-home', [
     'class' => '',

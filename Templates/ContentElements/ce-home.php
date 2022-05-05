@@ -4,13 +4,17 @@ $image = isset($image) ? $image:'';
 $headline = isset($headline) ? $headline : '';
 $text = isset($text) ? $text:'';
 $btn = isset($btn) ? $btn : '';
+$subline = isset($subline) ? $subline : '';
 ?>
-<div class="ce-header-home  mt-30  mb-50 ">
+<div class="ce-home  mt-30  mb-50 ">
     <div class="container">
-        <div class="header-home">
+        <div class="header">
             <div class="row row-home ">
                 <div class="col-lg-6 col-xs-6 col-12">
                     <div class=" teaser-info">
+                    <?php if( !empty( $subline ) ): ?>
+                            <h5 class="blue-txt" > <?php echo $subline ?></h1>
+                        <?php endif; ?>
                         <?php if( !empty( $headline ) ): ?>
                             <h1 class="blue-txt" > <?php echo $headline ?></h1>
                         <?php endif; ?>

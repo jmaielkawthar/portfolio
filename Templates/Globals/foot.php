@@ -1,7 +1,7 @@
 
 <?php include 'Globals/breakpoint-detection.php'; ?>
 
-<script src="Prod/prod.main.js"></script>
+<script src="../../dist/js/main.min.js"></script>
 
 </body>
 </html>

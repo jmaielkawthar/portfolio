@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-sm-9 navbar-menu">
-                    <ul>
+                    <ul class="main-menu">
                         <li><a href="#home"> home</a></li>
                         <li><a href="#services"> services</a></li>
                         <li><a href="#about">about</a></li>

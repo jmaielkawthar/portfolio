@@ -15,11 +15,9 @@
 
     <meta name="author" content="IHA">
     <meta name="description" content="<?php echo $description; ?>">
-    <link rel="stylesheet" href="Prod/prod.main.css?v=<?php echo time(); ?>">
     <title>JK</title>
     <link rel="icon" type="image/x-icon" href="../src/images/logo.svg">
-    <link rel="stylesheet" href="../dist/css/main.css">
-    <script src="../dist/js/main.js"></script>
+    <link rel="stylesheet" href="../../dist/css/main.css">
     <?php include 'favicons.php'; ?>
 </head>
 

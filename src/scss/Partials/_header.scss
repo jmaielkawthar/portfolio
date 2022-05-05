@@ -54,19 +54,21 @@ header{
         }
        // background-color: #24263B;
         ul{
-            padding:20px 0 ;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            a{
-                color:  $gray-dark ;
-                &:hover{
-                    color: $blue-cyan;
-                    text-decoration: none;
+            &.main-menu{
+                width: 100%;
+                padding:20px 0 ;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                a{
+                    color:  $gray-dark ;
+                    &:hover{
+                        color: $blue-cyan;
+                        text-decoration: none;
+                    }
                 }
             }
         }
-      
     }
 }
 // button action menu on mobile
@@ -136,11 +138,12 @@ header{
      &:after {
          transform: rotate(-45deg);
      }
- }
- .no-scroll{
-    overflow: hidden;
-    @include media-breakpoint-up(md){
-        overflow: unset;
+ 
+    .no-scroll{
+        overflow: hidden;
+        @include media-breakpoint-up(md){
+            overflow: unset;
+        }
     }
 
 }

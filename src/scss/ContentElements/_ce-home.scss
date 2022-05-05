@@ -1,4 +1,4 @@
-.ce-header-home{
+.ce-home{
     position: relative;
     overflow: hidden;
     &:before {
@@ -21,7 +21,7 @@
         width: 193px;
         height: 467px;
     }
-    .header-home{
+    .header{
         padding: 40px 0;
         @include media-breakpoint-up(md){
             padding: 20px 0;

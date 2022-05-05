@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>TYPO3 Sitepackage - Pages list</title>
+    <title>protfolio - Pages list</title>
     <style>
         *{
 			box-sizing: border-box;

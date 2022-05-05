@@ -43,7 +43,7 @@ function webpImage() {
 // minify js
 function jsmin(){
   return src([
-    'node_modules/jquery/dist/jquery.js',
+    'node_modules/jquery/dist/jquery.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     //'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     'node_modules/slick-carousel/slick/slick.js',
@@ -52,7 +52,7 @@ function jsmin(){
     'src/js/main.js',
   ]) // change to your source directory
 
-    // .pipe(concat('main.js'))
+    .pipe(concat('main.js'))
     // .pipe(dest('src/js'))
     .pipe(rename('main.min.js'))
     .pipe(uglify())

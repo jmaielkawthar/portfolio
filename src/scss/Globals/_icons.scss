@@ -1,0 +1,95 @@
+/* ------------------------------------
+iCONS
+------------------------------------ */
+.icon {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-facebook {
+    @extend .icon;
+    width: 32px;
+    height: 32px;
+    background-image: url(../Img/Icones/facebook-dark.svg);
+    
+    &:hover{
+        background-image: url(../Img/Icones/facebook.svg);
+    }
+}
+.icon-instagram {
+    @extend .icon;
+    width: 32px;
+    height: 32px;
+    background-image: url(../Img/Icones/instagram-dark.svg);
+    &:hover{
+        background-image: url(../Img/Icones/instagram.svg);
+    }
+}
+.icon-twitter {
+      @extend .icon;
+      width: 32px;
+      height: 32px;
+      background-image: url(../Img/Icones/twitter-dark.svg);
+      &:hover{
+        background-image: url(../Img/Icones/twitter.svg);
+        
+    }
+}
+.icon-linkedin {
+    @extend .icon;
+    width: 32px;
+    height: 32px;
+    background-image: url(../Img/Icones/linkedin-dark.svg);
+    &:hover{
+        background-image: url(../Img/Icones/linkedin.svg);
+    }
+}
+.icon-mobile {
+    padding-left: 40px;
+    background-size: 20px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(../Img/Icones/phone-call.svg);
+        left: 0;
+        top: 5px;
+    }
+}
+.icon-adresse {
+    padding-left: 40px;
+    background-size: 20px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(../Img/Icones/home.svg);
+        left: 0;
+        top: 5px;
+    }
+}
+.icon-email {
+    padding-left: 40px;
+    background-position: left top;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(../Img/Icones/letter.svg);
+        left: 0;
+        top: 5px;
+    }
+}

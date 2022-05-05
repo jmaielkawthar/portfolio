@@ -49,10 +49,6 @@ span{
     
 }    
 
-
-
-
-
 .line-dec {
     margin: 10px 0 0;
     width: 50px;
@@ -96,32 +92,7 @@ span{
         }
     }
 }
-.bg-shapes{
-    overflow: hidden;
-	position: relative;
-    &:before {
-		content: '';
-		background-image: url(../Img/portfolio-right-dec.jpg);
-		background-repeat: no-repeat;
-		position: absolute;
-		right: 0;
-		top: 0px;
-		width: 414px;
-		height: 861px;
-		z-index: -3;
-	}
-	&:after {
-		content: '';
-		background-image: url(../Img/portfolio-left-dec.jpg);
-		background-repeat: no-repeat;
-		position: absolute;
-		left: 0;
-		top: 0px;
-		width: 677px;
-		height: 759px;
-		z-index: -3;
-	}
-}
+
 .blue{
     color: $blue; 
 }  

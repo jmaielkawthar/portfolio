@@ -1,37 +1,47 @@
-header{
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
-    nav{
-        .navbar-logo{
+header {
+    @include media-breakpoint-up(md) {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    nav {
+        .navbar-logo {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            img{
+            margin: 10px 0;
+
+            .logo {
+                width: 80px;
+
+                @include media-breakpoint-up(md) {
+                    width: 125px;
+                }
+
+            }
+
+            img {
                 width: 100%;
                 height: 100%;
-                max-width: 64px;
             }
         }
-          .navbar-menu{
+
+        .navbar-menu {
             flex-direction: column;
             justify-content: flex-start;
             display: flex;
             background: linear-gradient(185.87deg, #FFFFFF 0%, #FFFFFF 52.74%, rgba(255, 255, 255, 0.9) 100%);
             box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
-            width: 90vw;
             height: 100vh;
-            padding: 40px 0 ;
+            padding: 40px 0;
             margin-left: auto;
             transition: all 0.15s ease-in;
             right: -100%;
-            top: 97px;
+            top: 100px;
             position: fixed;
             z-index: 9;
-            @include media-breakpoint-up(sm){
-                top: 127px;
-                margin-bottom: 27px;
-            }
+            width: 100%;
+
             @include media-breakpoint-up(md) {
-                margin-bottom: 27px;
                 flex-direction: row;
                 position: relative;
                 right: unset;
@@ -41,28 +51,35 @@ header{
                 justify-content: flex-end;
                 width: 100%;
                 height: auto;
-                box-shadow:unset;
-                background:transparent;
+                box-shadow: unset;
+                background: transparent;
             }
-            @include media-breakpoint-up(lg){
-                margin-bottom: 32px;
-            }
-            &.open{
+            &.open {
                 transform: translateX(-100%);
                 overflow: scroll;
             }
         }
-       // background-color: #24263B;
-        ul{
-            &.main-menu{
+
+        // background-color: #24263B;
+        ul {
+            &.main-menu {
                 width: 100%;
-                padding:20px 0 ;
+                padding: 20px 0;
                 list-style-type: none;
                 display: flex;
                 justify-content: space-around;
-                a{
-                    color:  $gray-dark ;
-                    &:hover{
+                flex-direction: column;
+
+                @include media-breakpoint-up(md) {
+                    align-items: center;
+                    padding: 0;
+                    flex-direction: row;
+                }
+
+                a {
+                    color: $gray-dark;
+
+                    &:hover {
                         color: $blue-cyan;
                         text-decoration: none;
                     }
@@ -71,77 +88,94 @@ header{
         }
     }
 }
+
 // button action menu on mobile
-.mobile-icon-menu{
+.mobile-icon-menu {
     margin-right: 10px;
-     @include media-breakpoint-up(md){
-         margin-right: 0;
-         display: none;
-     }
-     button{
-         margin: auto;
-         border: none;
-         background-color: transparent;
-         &.icon-menu{
-             padding: 0;
-             width: 24px;
-             height: 24px;
-             @include media-breakpoint-up(md){
-                 width: 25px;
-             }
-             &.open{
-                 .icon-menu-open{
-                     display: none;
-                 }
-                 .icon-menu-close{
-                     display: flex;
-                 }
-             }
-         }
-     }
-     .hamburger{
-         width:100%;
-         height: 2px;
-         background-color:$blue-cyan;
-         margin-bottom: 6px;
-         display: block;
-         @include media-breakpoint-up(md){
-             margin-bottom: 4px ;
-         }
-         &:last-child{
-             margin-bottom: 0;
-         }
-     }
- }
- // close button
- .icon-menu-close {
-     z-index: 4;
-     position: relative;
-     display: none;
-     align-items: center;
-     justify-content: center;
-     height: 100%;
-     width:100%;
-     &:hover {
-         opacity: 1;
-     }
-     &:before,&:after {
-         position: absolute;
-         content: ' ';
-         height: 24px;
-         width: 2px;
-         background-color: $blue-cyan;
-     }
-     &:before {
-         transform: rotate(45deg);
-     }
-     &:after {
-         transform: rotate(-45deg);
-     }
- 
-    .no-scroll{
+
+    @include media-breakpoint-up(md) {
+        margin-right: 0;
+        display: none;
+    }
+
+    button {
+        margin: auto;
+        border: none;
+        background-color: transparent;
+
+        &.icon-menu {
+            padding: 0;
+            width: 24px;
+            height: 24px;
+
+            @include media-breakpoint-up(md) {
+                width: 25px;
+            }
+
+            &.open {
+                .icon-menu-open {
+                    display: none;
+                }
+
+                .icon-menu-close {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        width: 100%;
+        height: 2px;
+        background-color: $blue-cyan;
+        margin-bottom: 6px;
+        display: block;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 4px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// close button
+.icon-menu-close {
+    z-index: 4;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: ' ';
+        height: 24px;
+        width: 2px;
+        background-color: $blue-cyan;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    .no-scroll {
         overflow: hidden;
-        @include media-breakpoint-up(md){
+
+        @include media-breakpoint-up(md) {
             overflow: unset;
         }
     }

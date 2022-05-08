@@ -36,42 +36,42 @@ ce('services', [
     'items' => [
         [
             'class' => '',
-            'image' => '../src/images/hero-header.png',
+            'image' => '../src/images/icons/broswer.png',
             'headline' => 'Web Development',
             'text' => 'Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
-            'image' => '',
+            'image' => '../src/images/icons/beaute.png',
             'headline' => 'Web Design',
             'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
-            'image' => '',
+            'image' => '../src/images/icons/video.png',
             'headline' => 'Video Editing',
             'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
-            'image' => '',
+            'image' => '../src/images/icons/camera.png',
             'headline' => 'Photography',
             'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
-            'image' => '',
+            'image' => '../src/images/icons/voiture.png',
             'headline' => 'App Developing',
             'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
-            'image' => '',
+            'image' => '../src/images/icons/chercher.png',
             'headline' => 'SEO Expart',
             'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
@@ -81,23 +81,51 @@ ce('services', [
 ?>
 
 <?php
-ce('headline', [
+ce('about', [
     'class' => '',
-    'subline' => 'About me',
-    'headline' => 'Hi there!',
-    'text' => "I'm kawthar, i'm a tunisien citizen, i have graduated since 2017, 
-    i have an it engenireing diploma and a Lincence on computer scince, i have more than 4 years of experince in web developement",
+    'subline' => "web developper",
+    'headline' => "what's about me",
+    'image' => '../src/images/about-left-image.png',
+    'textes' =>[
+        [
+            'text' => "I'm kawthar, i'm a tunisien citizen, i have graduated since 2017, i have an it engenireing diploma and a Lincence on computer scince, i have more than 4 years of experince in web developement",
+        ],
+        [
+            'text' => "Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy",
+        ],
+
+    ],
+    'items' =>[
+        [
+            'headline' => 'Name ',
+            'text' => 'kawthar ',
+        ],
+        [
+            'headline' => 'Phone ',
+            'text' => '+216 22 215 851 ',
+        ],
+
+        [
+            'headline' => 'Email ',
+            'text' => 'info@gmail.com ',
+        ],
+
+        [
+            'headline' => 'LinkedIn ',
+            'text' => 'link.linkedin',
+        ],
+
+    ],
+   
 ]);
 ?>
 
 <?php
-ce('about', [
+ce('headline', [
     'class' => '',
-    'image' => '',
-    'subline' => 'introduction',
-    'headline' => 'Hello every one',
-    'text' => 'Elevator Message here: EU Green Deal treibt Transformation hin zu Nachhaltigkeit voran mit Zielen für Klimaneutralität, Energiewende, Ressourcenwende und soziale Standards.',
-    'btn' => 'Details',
+    'subline' => 'My protfolio',
+    'headline' => 'Portfolio Showcase',
+    'text' => "Here some projects during my experience ",
 ]);
 ?>
 
@@ -106,7 +134,7 @@ ce('protfolio', [
     'class' => '',
     'subline' => 'our portfolio',
     'headline' => 'portfolio',
-    'text' => 'we proived portfolio',
+    'text' => '',
     'items' => [
         [
             'class' => '',
@@ -131,6 +159,7 @@ ce('protfolio', [
         ],
         [
             'class' => '',
+            'lineClass' => 'blue',
             'image' => '',
             'headline' => 'Kreativ Quartier Potsdam',
             'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
@@ -140,43 +169,50 @@ ce('protfolio', [
 ]);
 ?>
 
+
+
 <?php
-ce('skills', [
-    'class' => '',
-    'subline' => 'our services',
-    'headline' => 'services',
-    'headline' => 'we proived services',
-    'items' => [
-        [
-            'class' => '',
-            'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
-            'btn' => 'Details',
-        ],
-        [
-            'class' => '',
-            'image' => '',
-            'headline' => 'Zille Campus',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
-            'btn' => 'Details',
-        ],
-        [
-            'class' => '',
-            'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
-            'btn' => 'Details',
-        ],
-        [
-            'class' => '',
-            'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
-            'btn' => 'Details',
-        ],
-    ]
-]);
+// ce('headline', [
+//     'class' => '',
+//     'subline' => 'My skills',
+//     'headline' => 'advanced skills',
+//     'text' => "Here some advanced skills that i ameliorate during my experience ",
+// ]);
+?>
+<?php
+// ce('skills', [
+//     'class' => '',
+//     'items' => [
+//         [
+//             'class' => '',
+//             'image' => '',
+//             'headline' => 'Kreativ Quartier Potsdam',
+//             'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+//             'btn' => 'Details',
+//         ],
+//         [
+//             'class' => '',
+//             'image' => '',
+//             'headline' => 'Zille Campus',
+//             'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+//             'btn' => 'Details',
+//         ],
+//         [
+//             'class' => '',
+//             'image' => '',
+//             'headline' => 'Kreativ Quartier Potsdam',
+//             'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+//             'btn' => 'Details',
+//         ],
+//         [
+//             'class' => '',
+//             'image' => '',
+//             'headline' => 'Kreativ Quartier Potsdam',
+//             'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+//             'btn' => 'Details',
+//         ],
+//     ]
+// ]);
 ?>
 
 <?php

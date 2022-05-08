@@ -1,3 +1,44 @@
 .ce-services{
-    
+    padding: 20px 0; 
+    @include media-breakpoint-up(md){
+        padding:40px 0 ; 
+    }
+    .item{
+        padding: 30px 15px;
+        margin: 5px;
+        color:$color-white;
+        background-color: $color-white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) ;
+        @include media-breakpoint-up(md){
+            padding: 50px 35px; 
+        }
+    }
+    .icon{
+        margin-bottom: 15px;
+        @include media-breakpoint-up(md){
+            margin-bottom: 30px;
+        }
+        figure{
+            width: 40px;
+            margin: 0 auto;
+            @include media-breakpoint-up(md){
+                width: 60px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    .bodytext{
+        .headline{
+            text-align: center;
+            margin: 0 0 20px;
+        }
+    }
+    .slick-initialized .slick-slide {
+        padding: 0 20px;
+    }
 }

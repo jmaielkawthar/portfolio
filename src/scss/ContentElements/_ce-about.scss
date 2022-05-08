@@ -1,0 +1,10 @@
+.ce-about{
+    padding: 20px 0; 
+    @include media-breakpoint-up(md){
+        padding:40px 0 ; 
+    }
+    background-color: $color-white;
+    .teaser-image{
+        z-index: 1;  
+    }
+}

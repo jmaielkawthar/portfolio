@@ -12,7 +12,7 @@ $subline = isset($subline) ? $subline : '';
             <div class="col-lg-6 col-xs-6 col-12">
                 <div class=" teaser-info">
                     <?php if( !empty( $subline ) ): ?>
-                    <h5 class="subline pink-violet"> <?php echo $subline ?></h1>
+                    <h5 class="subline"> <?php echo $subline ?></h1>
                         <?php endif; ?>
                         <?php if( !empty( $headline ) ): ?>
                         <h1 class="headlineBig"> <?php echo $headline ?></h1>

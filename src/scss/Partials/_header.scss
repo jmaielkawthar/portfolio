@@ -197,7 +197,6 @@ header {
 
     .no-scroll {
         overflow: hidden;
-
         @include media-breakpoint-up(md) {
             overflow: unset;
         }

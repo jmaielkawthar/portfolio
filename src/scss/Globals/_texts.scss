@@ -1,12 +1,10 @@
 /* ------------------------------------
 TEXTS
 ------------------------------------ */
-p , .text {
+p , .text, div{
     // 14/25 / 400 /12/22
     color: $gray-4a;
-    font-family: $font-family-source;
     text-transform: capitalize;
-    font-weight: $regular;
     font-size:  $font-size-small-mobile-12;
     line-height:  $line-height-default-mobile-22;
     @include media-breakpoint-up(md) {
@@ -30,7 +28,6 @@ span{
      }
 }
 .headline{
-    text-transform: capitalize;
     color: $gray-111;
     font-weight: $bold;
       //  28/40/700 & 18/24
@@ -50,15 +47,42 @@ span{
           line-height: $line-height-large-74;
       }
 }
+.title{
+        // 18/25 / 400 /16/20
+        font-weight: $bold;
+        font-size:  $font-size-default-mobile-16;
+        line-height:  $line-height-default-mobile-20;
+        @include media-breakpoint-up(md) {
+            font-size:  $font-size-default-18;
+            line-height: $line-height-default-25;
+        }
+}
 .line-headline {
     background-color: $pink-1 ;
     width: 50px;
     height: 2px;
+    margin: 5px 0 15px;
+    @include media-breakpoint-up(md) {
+        margin: 5px 0 30px;
+    }
     &.center{
-        margin: 0 auto;
+        margin: 5px auto 15px;
         text-align: center;
         justify-content: center;
+        @include media-breakpoint-up(md) {
+            margin: 5px auto 30px;
+        }
     }
+    &.blue{
+        background-color: $blue ;
+    }
+    &.orange{
+        background-color: $orange ;
+    }
+    &.pink-violet{
+        background-color: $pink-1 ;
+    }
+    
 }
 
 h1,

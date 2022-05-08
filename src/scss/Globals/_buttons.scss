@@ -28,15 +28,15 @@ button {
     &.secondary-button {
         padding: 5px 20px;
         width:fit-content;
-        color: $pink-1;
-        border:1px solid  $pink-1;
+        color: $orange-light;
+        border:1px solid   $orange-light ;
         background-color:  transparent;
         border-radius: 5px;
         text-align: center;
         &:hover {
             text-decoration: none;
-            color:  $pink-1;
-            border-color:  $pink-1;
+            color:  $orange;
+            border-color:  $orange;
         }
     }
 }

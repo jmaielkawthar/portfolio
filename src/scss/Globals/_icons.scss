@@ -116,5 +116,10 @@ iCONS
     top: 40%;
     transform: rotate(-135deg);
 }
-
+.arrow-right {
+    @extend .arrow;
+    right: 33px;
+    top: 40%;
+    transform: rotate(-45deg);
+}
 //****end  arrow

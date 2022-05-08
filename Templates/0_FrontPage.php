@@ -13,52 +13,83 @@ include 'Partials/header.php';
 <?php
 ce('home', [
     'class' => '',
-    'image' => '',
-    'subline' => 'introduction',
+    'image' => '../src/images/hero-header.png',
+    'subline' => 'Welcome to my potfolio website',
     'headline' => 'Hello every one',
-    'text' => 'Elevator Message here: EU Green Deal treibt Transformation hin zu Nachhaltigkeit voran mit Zielen für Klimaneutralität, Energiewende, Ressourcenwende und soziale Standards.',
+    'text' => " i'm kawthar, professional web developer with long time experience in this field ",
     'btn' => 'Download Resume',
+]);
+?>
+
+<?php
+ce('headline', [
+    'class' => '',
+    'subline' => 'our services',
+    'headline' => 'Provided services',
+    'text' => 'we provied templates for your business website ',
 ]);
 ?>
 
 <?php
 ce('services', [
     'class' => '',
-    'subline' => 'our services',
-    'headline' => 'services',
-    'text' => 'we proived services',
     'items' => [
         [
             'class' => '',
-            'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+            'image' => '../src/images/hero-header.png',
+            'headline' => 'Web Development',
+            'text' => 'Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
             'image' => '',
-            'headline' => 'Zille Campus',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+            'headline' => 'Web Design',
+            'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
             'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+            'headline' => 'Video Editing',
+            'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
         [
             'class' => '',
             'image' => '',
-            'headline' => 'Kreativ Quartier Potsdam',
-            'text' => 'Das KreativQuartier Potsdam - KRQ in bester Lage wird ein lebendiges, nachhaltiges Quartier für Unternehmen, Kreative sowie Kunst und Kultur, welches weit über Potsdam hinaus Anziehungskraft haben wird.  ',
+            'headline' => 'Photography',
+            'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
             'btn' => 'Details',
         ],
-    ]
+        [
+            'class' => '',
+            'image' => '',
+            'headline' => 'App Developing',
+            'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
+            'btn' => 'Details',
+        ],
+        [
+            'class' => '',
+            'image' => '',
+            'headline' => 'SEO Expart',
+            'text' => ' Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy  ',
+            'btn' => 'Details',
+        ],
+    ],
 ]);
 ?>
+
+<?php
+ce('headline', [
+    'class' => '',
+    'subline' => 'About me',
+    'headline' => 'Hi there!',
+    'text' => "I'm kawthar, i'm a tunisien citizen, i have graduated since 2017, 
+    i have an it engenireing diploma and a Lincence on computer scince, i have more than 4 years of experince in web developement",
+]);
+?>
+
 <?php
 ce('about', [
     'class' => '',
@@ -69,6 +100,7 @@ ce('about', [
     'btn' => 'Details',
 ]);
 ?>
+
 <?php
 ce('protfolio', [
     'class' => '',
@@ -107,6 +139,7 @@ ce('protfolio', [
     ]
 ]);
 ?>
+
 <?php
 ce('skills', [
     'class' => '',
@@ -145,6 +178,7 @@ ce('skills', [
     ]
 ]);
 ?>
+
 <?php
 //----------------------------- END CONTENT ------------------------------------
 include 'Globals/foot.php';

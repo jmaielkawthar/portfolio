@@ -7,30 +7,43 @@
  /*******************
   *  Color Gray *
   *******************/
- $gray-dark : #2a2a2a;
- $gray : #afafaf;
- $gray-light :#eee;
- $gray-lighter : #f7f7f7;
+$gray-111: #111;
+$gray-1a: #1A1A1A;
+$gray-2a: #2a2a2a;
+$gray-333:  #333333;
+$gray-4d:  #4D4D4D;
+$gray-4a:  #4a4a4a;
+
+$gray-666: #666666;
+$gray-999:  #999999;
+$gray-b3: #B3B3B3;
+$gray-b2: #B2B2B2;
+$gray-5: #afafaf;
+
+$gray-e6:  #E6E6E6;
+$gray-e5:  #e5e5e5;
+$gray-f7:  #f7f7f7;
+$gray-7a:  #7a7a7a;
+$gray-eee:  #eee;
+
  
  /*******************
   *  Color Blue *
   *******************/
-  $blue : #4da6e7;
-  $blue-1 : #005fac;
-  $blue-2 : #092939;
- 
+  $blue : #12b7b1;
+
   /*******************
   *  Color Random *
   *******************/
   $orange : #e26018;
   $pink : #f49daf;
+  $pink-1 : #dc8cdb;
   $blue-cyan : #12b7b1;
   $yellow : #f0ba55;
 
 
 
- 
  /*********************
   *  Gradients Colors *
   *********************/
- 
+  $gradiant-pink: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);

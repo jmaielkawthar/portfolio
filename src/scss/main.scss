@@ -4,7 +4,7 @@
 1. Vendors & NPM components
 ------------------------------------ */
 
-//import "/node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 //@import "../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
 //@import "Vendors/jquery.fancybox";
 
@@ -40,6 +40,7 @@
 @import "Globals/icons";
 @import "Globals/tables";
 @import "Globals/filter";
+@import "Globals/shapes";
 
 /* ------------------------------------
 5. Partials
@@ -65,4 +66,5 @@
  @import "ContentElements/ce-home";
  @import "ContentElements/ce-services";
  @import "ContentElements/ce-about";
+ @import "ContentElements/ce-headline";
 

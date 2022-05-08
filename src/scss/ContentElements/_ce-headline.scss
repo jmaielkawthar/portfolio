@@ -1,0 +1,22 @@
+.ce-headline{
+    margin: 20px 0;
+    padding: 0 0 10px;
+    .subline{
+        margin-bottom: 5px;
+        @include media-breakpoint-up(md){
+            margin-bottom: 10px;
+        }
+    }
+    .headline{
+        margin-bottom: 5px;
+        @include media-breakpoint-up(md){
+            margin-bottom: 10px;
+        }
+    }
+    .text{
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md){
+            margin-bottom: 20px;
+        }
+    }
+}

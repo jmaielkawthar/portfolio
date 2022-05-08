@@ -19,89 +19,103 @@
     letter-spacing
    ------------------------------------ */
  
- $letter-spacing-normal: 0;
- $letter-spacing-small: 0.1px;
- $letter-spacing-medium: 0.5px;
+ $letter-spacing-0: 0;
+ $letter-spacing-01: 0.1px;
+ $letter-spacing-05: 0.5px;
  
  /* ------------------------------------
     Desktop Font sizes
    ------------------------------------ */
- $font-size-small-1 :12px;
- $font-size-small-0 :13px;
- 
- $font-size-default-1 :14px;
- $font-size-default-0 :15px;
- 
- $font-size-medium-4 :18px; //h6
- $font-size-medium-3 :20px; 
- $font-size-medium-2 :25px; //h5
- $font-size-medium-1 :30px; 
- $font-size-medium-0 :35px;//h4
- 
- $font-size-large-0 :40px;  //h3
- $font-size-large-1 :45px;//h2
- $font-size-large-2 :50px; 
- $font-size-large-3 :60px; //h1
- $font-size-large-4 :100px; //big-title
+ $font-size-small-12 :12px;
+ $font-size-small-13 :13px;
+ $font-size-small-14 :14px;
+
+ $font-size-default-15 :15px;
+ $font-size-default-18 :18px;
+ $font-size-default-20 :20px; 
+ $font-size-default-25 :25px;
+
+ $font-size-medium-28 :28px; 
+ $font-size-medium-30 :30px; 
+ $font-size-medium-35 :35px;
+ $font-size-medium-40 :40px;  
+
+ $font-size-large-45 :45px;
+ $font-size-large-50 :50px; 
+ $font-size-large-60 :60px; 
+ $font-size-large-64 :64px; 
+ $font-size-large-100 :100px; 
  
  
  /* ------------------------------------
    Desktop Line Heights
    ------------------------------------ */
- $line-height-small-1 :18px;
- $line-height-small-0 :20px;
+ $line-height-small-14 :14px;
+ $line-height-small-16 :16px;
+ $line-height-small-18 :18px;
  
- $line-height-default-1: 25px;
- $line-height-default-0: 30px;
+ $line-height-default-20: 20px;
+ $line-height-default-25: 25px;
+ $line-height-default-28 :28px;
+ $line-height-medium-30: 30px;
 
- $line-height-medium-4 :32px;
- $line-height-medium-3: 35px;
- $line-height-medium-2: 38px;
- $line-height-medium-1 :40px;
- $line-height-medium-0 :42px;
- 
- $line-height-large-0 : 45px;
- $line-height-large-1 : 50px;
- $line-height-large-2 : 55px;
- $line-height-large-3 : 60px;
- $line-height-large-4 : 100px;
+ $line-height-medium-32: 32px;
+ $line-height-medium-35 :35px;
+ $line-height-medium-40 :40px;
+ $line-height-medium-45 :45px;
+
+ $line-height-large-48 : 48px;
+ $line-height-large-55 : 55px;
+ $line-height-large-60 : 60px;
+ $line-height-large-74 : 74px;
+ $line-height-large-100 : 100px;
  
  /* ------------------------------------
   Mobile Font sizes
   ------------------------------------ */
- $font-size-small-mobile-1: 9px;
- $font-size-small-mobile-0: 10px;
 
- $font-size-default-mobile-1: 13px;
- $font-size-default-mobile-0: 14px;
- 
- $font-size-medium-mobile-1: 15px;
- $font-size-medium-mobile-0: 17px;
- 
- $font-size-large-mobile-0: 18px;
- $font-size-large-mobile-1: 20px;
- $font-size-large-mobile-2: 26px;
- $font-size-large-mobile-3: 32px;
- $font-size-large-mobile-4: 45px;
+ $font-size-small-mobile-10: 10px;
+ $font-size-small-mobile-12: 12px;
+ $font-size-small-mobile-13: 13px;
+ $font-size-small-mobile-14: 14px;
+
+ $font-size-default-mobile-15: 15px;
+ $font-size-default-mobile-16: 16px;
+ $font-size-default-mobile-18: 18px;
+ $font-size-default-mobile-20: 20px;
+
+ $font-size-medium-mobile-22: 22px;
+ $font-size-medium-mobile-25: 25px;
+ $font-size-medium-mobile-26: 26px;
+ $font-size-medium-mobile-28: 28px;
+
+ $font-size-large-mobile-30: 30px;
+ $font-size-large-mobile-32: 32px;
+ $font-size-large-mobile-35: 35px;
+ $font-size-large-mobile-38: 38px;
+ $font-size-large-mobile-40: 40px;
  /* ------------------------------------
   Mobile Line Heights
   ------------------------------------ */
  
- $line-height-small-mobile-1: 13px;
- $line-height-small-mobile-0: 14px;
+ $line-height-small-mobile-12: 12px;
+ $line-height-small-mobile-14: 14px;
+ $line-height-small-mobile-16: 16px;
  
- $line-height-default-mobile-1: 18px;
- $line-height-default-mobile-0: 20px;
- 
- $line-height-medium-mobile-1:  22px;
- $line-height-medium-mobile-0: 26px;
- 
+ $line-height-default-mobile-18: 18px;
+ $line-height-default-mobile-20: 20px;
+ $line-height-default-mobile-22: 22px;
+ $line-height-medium-mobile-24:  24px;
 
- $line-height-large-mobile-0: 38px;
- $line-height-large-mobile-1: 40px;
- $line-height-large-mobile-2: 45px;
- $line-height-large-mobile-3: 48px;
- $line-height-large-mobile-4: 56px;
+ $line-height-medium-mobile-25: 25px;
+ $line-height-medium-mobile-28: 28px;
+ $line-height-large-mobile-30: 30px;
+ $line-height-large-mobile-35: 35px;
+
+ $line-height-large-mobile-38: 38px;
+ $line-height-large-mobile-40: 40px;
+ $line-height-large-mobile-42: 42px;
+ $line-height-large-mobile-45: 45px;
  
  /* ------------------------------------
    Base Variables

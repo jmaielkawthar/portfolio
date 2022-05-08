@@ -1,7 +1,7 @@
 /* Bootstrap variables */
 $grid-columns: 12;
-$grid-gutter-width: 18px;
-$grid-gutter-width-mobile: 18px;
+$grid-gutter-width: 20px;
+$grid-gutter-width-mobile: 20px;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -12,11 +12,11 @@ $grid-breakpoints: (
 
 $container-max-widths: (
      
+        xs: 320px,
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1140px,
-        xxl: 1320px
+        xl: 1140px
 );
 
 $spacer: 1px;
@@ -29,11 +29,4 @@ $spacers: () !default;
                   ),
                   $spacers
   );
-}
-.container-min{
-        max-width: 1320px;
-}
-.container-max{
-        max-width: 1440px;
-        margin: 0 auto;
 }

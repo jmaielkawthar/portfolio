@@ -6,15 +6,15 @@ ul{
     margin-bottom: 0;
     padding-left: 0;
     li{
-         // 15 /30/400 14/20
+         // 20 /25 /400 16/20
        font-family: $font-family-source;
        text-transform: capitalize;
-       font-size:  $font-size-default-mobile-0;
-       line-height:  $line-height-default-mobile-0;
-       color: $gray-dark;
-       @include media-breakpoint-up(lg) {
-           font-size:  $font-size-default-0;
-           line-height: $line-height-default-0;
+       color: $gray-111;
+       font-size:  $font-size-default-mobile-16;
+       line-height:  $line-height-default-mobile-20;
+       @include media-breakpoint-up(md) {
+           font-size:  $font-size-default-20;
+           line-height: $line-height-medium-mobile-25;
        }
     }
 }

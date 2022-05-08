@@ -1,33 +1,10 @@
 .ce-home{
-    position: relative;
-    overflow: hidden;
-    &:before {
-        content: '';
-        background-image: url(../src/images/banners/baner-dec-right.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 0;
-        top: 100px;
-        width: 98px;
-        height: 290px;
-    }
-    &:after {
-        content: '';
-        background-image: url(../src/images/banners/baner-dec-left.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 0;
-        top: 100px;
-        width: 193px;
-        height: 467px;
-    }
-    .header{
-        padding: 40px 0;
-        @include media-breakpoint-up(md){
-            padding: 20px 0;
-        }
+    padding: 40px 0;
+    @include media-breakpoint-up(md){
+        padding: 20px 0;
     }
     .row-home{
+        z-index: 2;
         flex-direction: column-reverse;
         align-items: center;
         @include media-breakpoint-up(xs){
@@ -39,16 +16,22 @@
         @include media-breakpoint-up(md){
             padding: 40px 0;
         }
-        h1{
+        .subline{
             margin-bottom: 10px;
             @include media-breakpoint-up(md){
                 margin-bottom: 20px;
             }
         }
-        p{
+        .headlineBig{
+            margin-bottom: 10px;
+            @include media-breakpoint-up(md){
+                margin-bottom: 20px;
+            }
+        }
+        .text{
             margin-bottom: 20px;
             @include media-breakpoint-up(md){
-                margin-bottom: 70px;
+                margin-bottom: 40px;
             }
         }
     }
@@ -59,21 +42,19 @@
             padding: 0;
         }
         figure{
-            mask-image: url("../Img/ImageShape.svg");
-            mask-repeat: no-repeat;
-            mask-position: center;
-            mask-size: contain;
-            overflow: hidden;
-
+            // mask-image: url("../Img/ImageShape.svg");
+            // mask-repeat: no-repeat;
+            // mask-position: center;
+            // mask-size: contain;
+            // overflow: hidden;
             img {
-               // height: 35vh;
-                width:100vw;
-                object-fit: cover;
+                width:100%;
+                object-fit: contain;
                 max-height: 318px;
-                @include media-breakpoint-up(sm){
-                    max-height: 600px;
-                    width:50vw;
-                    height: 100%;
+                height: 100%;
+                @include media-breakpoint-up(md){
+                    max-height: 450px;
+                   
                 }
             }
 

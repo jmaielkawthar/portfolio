@@ -9,65 +9,65 @@ h5,
 h6{
     font-family: $font-family-source;
     text-transform: capitalize;
-    font-weight: $font-weight-bold;
-    color: $gray-dark;
+    font-weight: $bold;
+    color: $gray-111;
 }
 
 h1 {
-    //60/60/700 &   32/48
-    font-size: $font-size-large-mobile-3;
-    line-height: $line-height-large-mobile-3;
+    //60/60/700 &   32/40
+    font-size: $font-size-large-mobile-32;
+    line-height: $line-height-large-mobile-40;
     @include media-breakpoint-up(md) {
-        font-size:  $font-size-large-3 ;
-        line-height: $line-height-large-3;
+        font-size:  $font-size-large-60 ;
+        line-height: $line-height-large-60;
     }
 }
 
 h2 {
-    //45/50/700 & 26/45
-    font-size:$font-size-large-mobile-2;
-    line-height: $line-height-large-mobile-2;
+    //45/50/700 & 26/35
+    font-size:$font-size-medium-mobile-26;
+    line-height: $line-height-large-mobile-35;
     @include media-breakpoint-up(md) {
-        font-size:$font-size-large-1 ;
-        line-height:$line-height-large-1;
+        font-size:$font-size-large-45;
+        line-height: $line-height-large-55;
     }
 }
 
 h3 {
-   //  40/45/700 & 18/38
-   font-size:$font-size-large-mobile-0;
-   line-height: $line-height-large-mobile-0;
+   //  40/45/700 & 22/28
+   font-size:$font-size-medium-mobile-22;
+   line-height: $line-height-medium-mobile-28;
    @include media-breakpoint-up(md) {
-       font-size:$font-size-large-0 ;
-       line-height:$line-height-large-0;
+       font-size:$font-size-medium-40 ;
+       line-height:$line-height-medium-45;
    }
 
 }
 
 h4 {
-        //  35/42/700 & 17/26
-    font-size:$font-size-medium-mobile-0;
-    line-height:$line-height-medium-mobile-0;
+        //  35/40/700 & 18/24
+    font-size:$font-size-default-mobile-18;
+    line-height:$line-height-medium-mobile-24;
     @include media-breakpoint-up(md) {
-        font-size: $font-size-medium-0;
-        line-height: $line-height-medium-0;
+        font-size: $font-size-medium-35;
+        line-height: $line-height-medium-40;
     }
 }
 h5 {
-    //  25/38/700 & 15/22
-    font-size:$font-size-medium-mobile-1;
-    line-height:$line-height-medium-mobile-1;
+    //  25/28/700 & 15/22
+    font-size:$font-size-default-mobile-15;
+    line-height:$line-height-default-mobile-22;
     @include media-breakpoint-up(md) {
-        font-size: $font-size-medium-2;
-        line-height: $line-height-medium-2;
+        font-size: $font-size-default-25;
+        line-height: $line-height-default-28;
     }
 }
 h6 {
-    //  18/32/700 & 14/20
-    font-size:  $font-size-default-mobile-0;
-    line-height:  $line-height-default-mobile-0;
+    //  18/25/700 & 14/20
+    font-size:  $font-size-small-14;
+    line-height:  $line-height-default-mobile-20;
     @include media-breakpoint-up(md) {
-        font-size: $font-size-medium-4;
-        line-height: $line-height-medium-4;
+        font-size: $font-size-default-18;
+        line-height: $line-height-default-25;
     }
 }

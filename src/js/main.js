@@ -35,4 +35,22 @@ function servicesSlider(){
           ]
       });
 }
-console.log("hello worldd")
+(function() { 
+  // on cible l'objet nav
+  let objNav = document.querySelector("nav");
+  // on mémorise la position de nav
+  let memoPositionNav = objNav.offsetTop;
+  function sticky(){
+    // position du curseur au scroll
+    var posCurseur = this.pageYOffset;
+    // je teste la différence de distance entre le scroll et nav
+    if(memoPositionNav-posCurseur<1){
+      objNav.classList.add("sticky")
+    }
+    if(posCurseur<101){
+      objNav.classList.remove("sticky");
+    }
+  }
+  // evenement
+  window.addEventListener("scroll", sticky);
+})()

@@ -9,16 +9,7 @@ $items = isset($items) ? $items : [];
 ?>
 <div class="ce-services">
     <div class="container">
-    <?php if( !empty( $subline ) ): ?>
-            <div class="blue-txt h1"> <?php echo $subline ?></div>
-        <?php endif; ?>
-        <?php if( !empty( $headline ) ): ?>
-            <div class="blue-txt h1"> <?php echo $headline ?></div>
-        <?php endif; ?>
-        <?php if( !empty( $text ) ): ?>
-            <div class="blue-txt h1 mb-40"> <?php echo $text ?></div>
-        <?php endif; ?>
-        <div class="row no-gutters services-slider">
+        <div class=" services-slider">
                 <?php foreach ($items as $item) { ?>
                     <div class="item">
                         <div class="icon">
